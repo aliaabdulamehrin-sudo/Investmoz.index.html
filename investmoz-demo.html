@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#12372a">
+<title>InvestMoz — Oportunidades de negócio</title>
+<style>
+:root{--green:#12372a;--green2:#1e6547;--mint:#dff5e8;--gold:#e8bd63;--ink:#17231d;--muted:#65736b;--bg:#f5f8f5;--white:#fff;--line:#e2e9e3;--red:#a33b3b}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}button,input,select,textarea{font:inherit}button{cursor:pointer}.top{background:var(--green);color:white;padding:15px 5%;display:flex;justify-content:space-between;align-items:center;gap:12px;position:sticky;top:0;z-index:5}.brand{font-weight:850;font-size:1.25rem;letter-spacing:-.5px}.brand span{color:var(--gold)}.nav{display:flex;gap:8px;flex-wrap:wrap}.nav button,.outline{background:transparent;border:1px solid #ffffff55;color:white;border-radius:10px;padding:9px 12px}.nav button.active,.nav button:hover{background:#ffffff1c}.wrap{max-width:1100px;margin:auto;padding:26px 18px 60px}.hero{background:linear-gradient(120deg,#12372a,#1e6547);color:white;border-radius:24px;padding:35px 28px;display:grid;grid-template-columns:1.6fr 1fr;gap:20px;align-items:center;overflow:hidden}.eyebrow{color:var(--gold);font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:1.5px}.hero h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.04;margin:12px 0}.hero p{color:#e0eee5;line-height:1.65;max-width:580px}.hero-card{background:#ffffff12;border:1px solid #ffffff35;padding:22px;border-radius:18px}.hero-card strong{font-size:1.6rem;display:block;margin:8px 0}.btn{border:0;border-radius:11px;padding:11px 16px;background:var(--gold);color:#1f2b21;font-weight:800}.btn.green{background:var(--green2);color:white}.btn.light{background:var(--mint);color:var(--green)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:30px 0 15px}.section-head h2{margin:0;font-size:1.45rem}.muted{color:var(--muted);font-size:.92rem}.filters{display:flex;gap:9px;flex-wrap:wrap;margin:14px 0}.filters input,.filters select,.field input,.field select,.field textarea{background:white;border:1px solid var(--line);border-radius:10px;padding:11px;width:100%;color:var(--ink)}.filters input{max-width:360px}.filters select{width:auto;min-width:160px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.card{background:white;border:1px solid var(--line);border-radius:17px;padding:18px;box-shadow:0 5px 18px #183b2410}.tag{display:inline-block;background:var(--mint);color:var(--green2);padding:5px 9px;border-radius:99px;font-size:.75rem;font-weight:750}.card h3{margin:12px 0 7px}.card p{color:var(--muted);font-size:.9rem;line-height:1.5}.metric{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:12px;margin-top:14px;gap:8px;font-size:.88rem}.metric strong{color:var(--green2)}.notice{background:#fff8e8;border:1px solid #f0dba7;color:#674d18;border-radius:13px;padding:13px 15px;margin:22px 0;font-size:.88rem;line-height:1.5}.panel{background:white;border:1px solid var(--line);border-radius:17px;padding:20px;margin-top:20px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field label{display:block;font-size:.86rem;font-weight:750;margin:0 0 6px}.field.full{grid-column:1/-1}.field textarea{min-height:95px;resize:vertical}.hidden{display:none!important}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.stat{padding:16px;background:#f4f8f4;border-radius:13px}.stat span{display:block;color:var(--muted);font-size:.82rem}.stat strong{display:block;font-size:1.3rem;margin-top:6px}.tablewrap{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:500px}th,td{text-align:left;padding:12px;border-bottom:1px solid var(--line);font-size:.9rem}th{color:var(--muted)}.footer{text-align:center;color:var(--muted);font-size:.82rem;margin-top:32px}.empty{padding:25px;text-align:center;color:var(--muted)}.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#17231d;color:white;padding:12px 18px;border-radius:12px;display:none;z-index:10;max-width:90%;box-shadow:0 8px 24px #0003}
+@media(max-width:760px){.top{align-items:flex-start;flex-direction:column}.nav{width:100%}.nav button{flex:1;font-size:.82rem;padding:8px 5px}.hero{grid-template-columns:1fr;padding:25px 20px}.grid{grid-template-columns:1fr}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.stats{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand">Invest<span>Moz</span></div>
+  <nav class="nav" aria-label="Navegação">
+    <button class="active" data-page="inicio">Início</button>
+    <button data-page="projetos">Projetos</button>
+    <button data-page="empreendedor">Apresentar projeto</button>
+    <button data-page="painel">Painel demo</button>
+  </nav>
+</header>
+<main class="wrap">
+<section id="page-inicio">
+  <div class="hero">
+    <div><div class="eyebrow">Ideias locais. Futuro partilhado.</div><h1>Descobre negócios<br>com potencial.</h1><p>A InvestMoz é um protótipo para explorar projetos empresariais moçambicanos e aprender como funciona o financiamento de negócios.</p><button class="btn" data-goto="projetos">Explorar projetos →</button></div>
+    <div class="hero-card"><div class="eyebrow">Versão de demonstração</div><strong>Moçambique 🇲🇿</strong><p>Projetos de exemplo, valores em meticais (MT) e simulações educativas. Ainda não são oportunidades reais de investimento.</p></div>
+  </div>
+  <div class="notice"><strong>Importante:</strong> Esta versão é apenas demonstrativa. Não aceita depósitos, não movimenta dinheiro e não garante rendimentos. Os projetos e números apresentados são fictícios. Investimentos reais podem envolver perdas e exigem avaliação legal e regulatória.</div>
+  <div class="section-head"><div><h2>Projetos em destaque</h2><div class="muted">Exemplos fictícios para testar a plataforma</div></div><button class="btn light" data-goto="projetos">Ver todos</button></div>
+  <div class="grid" id="featured"></div>
+</section>
+<section id="page-projetos" class="hidden">
+  <div class="section-head"><div><h2>Explorar projetos</h2><div class="muted">Filtra por setor ou procura pelo nome.</div></div></div>
+  <div class="filters"><input id="search" placeholder="Pesquisar projeto..." aria-label="Pesquisar projeto"><select id="sector"><option value="">Todos os setores</option><option>Agricultura</option><option>Comércio</option><option>Restauração</option><option>Tecnologia</option><option>Moda</option></select></div>
+  <div class="grid" id="allprojects"></div>
+</section>
+<section id="page-empreendedor" class="hidden">
+  <div class="section-head"><div><h2>Apresentar um projeto</h2><div class="muted">Regista uma ideia para demonstração. O envio não garante aprovação nem financiamento.</div></div></div>
+  <form id="projectForm" class="panel formgrid">
+    <div class="field"><label for="owner">Nome do empreendedor</label><input id="owner" required maxlength="80" placeholder="O teu nome"></div>
+    <div class="field"><label for="business">Nome do projeto/negócio</label><input id="business" required maxlength="100" placeholder="Ex.: Horta Verde"></div>
+    <div class="field"><label for="category">Setor</label><select id="category" required><option value="">Selecionar setor</option><option>Agricultura</option><option>Comércio</option><option>Restauração</option><option>Tecnologia</option><option>Moda</option><option>Indústria</option></select></div>
+    <div class="field"><label for="amount">Financiamento pretendido (MT)</label><input id="amount" type="number" min="1" max="100000000" required placeholder="Ex.: 50000"></div>
+    <div class="field full"><label for="description">Descrição do projeto e uso do dinheiro</label><textarea id="description" required maxlength="1000" placeholder="Explica o negócio, os objetivos e como o financiamento seria utilizado."></textarea></div>
+    <div class="field full"><label><input type="checkbox" id="registered"> A empresa está oficialmente registada</label></div>
+    <div class="field full"><button class="btn green" type="submit">Guardar pedido de demonstração</button></div>
+  </form>
+  <div class="notice">Os pedidos ficam guardados apenas neste navegador de demonstração. Não são enviados para uma equipa nem constituem uma oferta de investimento.</div>
+</section>
+<section id="page-painel" class="hidden">
+  <div class="section-head"><div><h2>Painel administrativo demonstrativo</h2><div class="muted">Dados locais de teste — não é um painel seguro de produção.</div></div></div>
+  <div class="notice"><strong>Modo de demonstração:</strong> este painel não tem autenticação administrativa nem base de dados partilhada. Não introduzas dados pessoais sensíveis.</div>
+  <div class="stats"><div class="stat"><span>Projetos de exemplo</span><strong id="countExamples">5</strong></div><div class="stat"><span>Pedidos guardados neste navegador</span><strong id="countRequests">0</strong></div><div class="stat"><span>Financiamentos reais</span><strong>0 MT</strong></div></div>
+  <div class="panel"><h3>Simulador de comissão</h3><p class="muted">Cálculo hipotético apenas para demonstração, não é uma taxa recomendada.</p><div class="formgrid"><div class="field"><label for="funding">Financiamento hipotético (MT)</label><input id="funding" type="number" min="0" value="100000"></div><div class="field"><label for="rate">Comissão hipotética (%)</label><input id="rate" type="number" min="0" max="100" step="0.1" value="3"></div></div><div class="stats" style="margin-top:14px"><div class="stat"><span>Comissão calculada</span><strong id="commission">3.000 MT</strong></div><div class="stat"><span>Valor após comissão</span><strong id="net">97.000 MT</strong></div><div class="stat"><span>Estado</span><strong>Simulação</strong></div></div></div>
+  <div class="panel"><h3>Pedidos de projeto deste navegador</h3><div id="requestsList" class="tablewrap"><div class="empty">Ainda não há pedidos guardados.</div></div><button id="clearRequests" class="btn light" style="margin-top:12px">Limpar pedidos de demonstração</button></div>
+</section>
+<div class="footer">InvestMoz · Protótipo educativo · Não constitui aconselhamento financeiro nem oferta de investimento.</div>
+</main>
+<div class="toast" id="toast" role="status"></div>
+<script>
+const projects=[
+{id:1,name:"Horta Verde",sector:"Agricultura",amount:150000,place:"Manica",desc:"Exemplo fictício de produção de hortícolas para mercados locais.",stage:"Projeto ilustrativo"},
+{id:2,name:"Mercado da Vila",sector:"Comércio",amount:80000,place:"Sofala",desc:"Exemplo fictício de uma pequena loja de produtos essenciais.",stage:"Projeto ilustrativo"},
+{id:3,name:"Sabores da Terra",sector:"Restauração",amount:120000,place:"Maputo",desc:"Exemplo fictício de um pequeno negócio de refeições tradicionais.",stage:"Projeto ilustrativo"},
+{id:4,name:"Soluções Digitais MZ",sector:"Tecnologia",amount:200000,place:"Maputo",desc:"Exemplo fictício de serviços digitais para pequenas empresas.",stage:"Projeto ilustrativo"},
+{id:5,name:"Moda Criativa",sector:"Moda",amount:65000,place:"Chimoio",desc:"Exemplo fictício de produção de roupa e acessórios locais.",stage:"Projeto ilustrativo"}
+];
+const fmt=n=>Number(n||0).toLocaleString("pt-MZ",{maximumFractionDigits:2})+" MT";
+function card(p){return `<article class="card"><span class="tag">${p.sector} · ${p.place||"Moçambique"}</span><h3>${escapeHTML(p.name)}</h3><p>${escapeHTML(p.desc)}</p><div class="metric"><span>Valor pretendido</span><strong>${fmt(p.amount)}</strong></div><div class="metric"><span>Estado</span><span>${p.stage||"Pedido recebido"}</span></div><button class="btn light details" data-id="${p.id}" style="margin-top:14px;width:100%">Ver detalhes</button></article>`}
+function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function renderProjects(){document.getElementById("featured").innerHTML=projects.slice(0,3).map(card).join("");let q=(document.getElementById("search").value||"").toLowerCase();let sec=document.getElementById("sector").value;let list=projects.filter(p=>(p.name+" "+p.desc+" "+p.sector).toLowerCase().includes(q)&&(!sec||p.sector===sec));document.getElementById("allprojects").innerHTML=list.length?list.map(card).join(""):'<div class="empty">Nenhum projeto encontrado.</div>';document.getElementById("countExamples").textContent=projects.length}
+function toast(s){let t=document.getElementById("toast");t.textContent=s;t.style.display="block";setTimeout(()=>t.style.display="none",3000)}
+function go(page){document.querySelectorAll("[id^=page-]").forEach(el=>el.classList.add("hidden"));document.getElementById("page-"+page).classList.remove("hidden");document.querySelectorAll("[data-page]").forEach(b=>b.classList.toggle("active",b.dataset.page===page));if(page==="painel")renderRequests();window.scrollTo({top:0,behavior:"smooth"})}
+document.querySelectorAll("[data-page]").forEach(b=>b.addEventListener("click",()=>go(b.dataset.page)));document.querySelectorAll("[data-goto]").forEach(b=>b.addEventListener("click",()=>go(b.dataset.goto)));
+document.getElementById("search").addEventListener("input",renderProjects);document.getElementById("sector").addEventListener("change",renderProjects);
+document.addEventListener("click",e=>{let b=e.target.closest(".details");if(b){let p=projects.find(x=>x.id===Number(b.dataset.id));if(p)toast(p.name+": exemplo fictício. Não é uma oferta real de investimento.")}});
+function getRequests(){try{return JSON.parse(localStorage.getItem("investmoz_demo_requests")||"[]")}catch{return []}}
+document.getElementById("projectForm").addEventListener("submit",e=>{e.preventDefault();let r=getRequests();r.push({owner:document.getElementById("owner").value.trim(),business:document.getElementById("business").value.trim(),category:document.getElementById("category").value,amount:Number(document.getElementById("amount").value),description:document.getElementById("description").value.trim(),registered:document.getElementById("registered").checked,date:new Date().toLocaleDateString("pt-MZ")});localStorage.setItem("investmoz_demo_requests",JSON.stringify(r));e.target.reset();toast("Pedido guardado neste navegador (demonstração).");});
+function renderRequests(){let r=getRequests();document.getElementById("countRequests").textContent=r.length;let el=document.getElementById("requestsList");el.innerHTML=r.length?`<table><thead><tr><th>Projeto</th><th>Setor</th><th>Valor pretendido</th><th>Registada?</th><th>Data</th></tr></thead><tbody>${r.map(x=>`<tr><td>${escapeHTML(x.business)}</td><td>${escapeHTML(x.category)}</td><td>${fmt(x.amount)}</td><td>${x.registered?"Sim":"Não"}</td><td>${escapeHTML(x.date)}</td></tr>`).join("")}</tbody></table>`:'<div class="empty">Ainda não há pedidos guardados.</div>'}
+document.getElementById("clearRequests").addEventListener("click",()=>{localStorage.removeItem("investmoz_demo_requests");renderRequests();toast("Pedidos de demonstração apagados.")});
+function calc(){let f=Math.max(0,Number(document.getElementById("funding").value)||0),r=Math.min(100,Math.max(0,Number(document.getElementById("rate").value)||0));let c=f*r/100;document.getElementById("commission").textContent=fmt(c);document.getElementById("net").textContent=fmt(f-c)}
+document.getElementById("funding").addEventListener("input",calc);document.getElementById("rate").addEventListener("input",calc);
+renderProjects();calc();
+</script>
+</body>
+</html>
